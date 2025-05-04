@@ -1,0 +1,8 @@
+baseURL = 'https://example.org/' #  Change it to your website name
+languageCode = 'en-us'
+title = 'In Her Safety Shoes'
+theme = "PaperMod"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
