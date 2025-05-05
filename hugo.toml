@@ -1,7 +1,68 @@
-baseURL = 'https://example.org/' #  Change it to your website name
+baseURL = 'https://rashmisrirangan.github.io/myblog/' #  Change it to your website name
 languageCode = 'en-us'
 title = 'In Her Safety Shoes'
 theme = "PaperMod"
+
+# Enable menu items
+[menu]
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 10
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 20
+
+[params]
+  env = "production"
+  author = "Rashmi Srirangan"
+  subtitle = 'Health and Safety Blog'
+  #email = 'srirangan.rashmi@gmail.com'
+  showReadingTime = true
+  showBreadCrumbs = true
+  showShareButtons = true
+  showToc = true
+  ShowPostNavLinks = true
+
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/rashmi-sri/"
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/rashmisrirangan/myblog"
+  
+  [params.share]
+    twitter = true
+    linkedin = true
+  
+  [params.homeInfoParams]
+    Title = "Hi, I'm Rashmi Srirangan 👋"
+    Content = "Welcome to my Health and Safety Blog!"
+  
+  #ShowPostList = true
+  
+  # Enable Search
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
+
+[security]
+  enableInlineShortcodes = true
+  enableRobotsTXT = true
+
+[markup]
+  defaultMarkdownHandler = 'goldmark'
+
+# enableEmoji = true
 
 [caches]
   [caches.images]
